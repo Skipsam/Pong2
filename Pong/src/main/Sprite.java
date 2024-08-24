@@ -10,10 +10,10 @@ public class Sprite {
 	private Color color;
 	private int initialXPosition, initialYPosition;
 	
-	public int GetxPosition() {
+	public int getXPosition() {
 		return xPosition;
 	}
-	public void setxPosition(int xPosition) {
+	public void setXPosition(int xPosition) {
 		this.xPosition = xPosition;
 	}
 	public void setXPosition(int newX, int panelWidth) {
@@ -26,10 +26,10 @@ public class Sprite {
 		
 			xPosition = newX;
 	}
-	public int GetyPosition() {
+	public int getYPosition() {
 		return yPosition;
 	}
-	public void setyPosition(int yPosition) {
+	public void setYPosition(int yPosition) {
 		this.yPosition = yPosition;
 	}
 	public void setYPosition(int newY, int panelHeight) {
@@ -46,41 +46,41 @@ public class Sprite {
 	
 	
 	
-	public int GetxVelocity() {
+	public int getXVelocity() {
 		return xVelocity;
 	}
 	
-	public void setxVelocity(int xVelocity) {
+	public void setXVelocity(int xVelocity) {
 		this.xVelocity = xVelocity;
 	}
 	
-	public int GetyVelocity() {
+	public int getYVelocity() {
 		return yVelocity;
 	}
 	
-	public void setyVelocity(int yVelocity) {
+	public void setYVelocity(int yVelocity) {
 		this.yVelocity = yVelocity;
 	}
 	
 	
-	public int Getwidth() {
+	public int getWidth() {
 		return width;
 	}
 	
-	public void setwidth(int width) {
+	public void setWidth(int width) {
 		this.width = width;
 	}
 	
-	public int Getheight() {
+	public int getHeight() {
 		return height;
 	}
 	
-	public void setheight(int height) {
+	public void setHeight(int height) {
 		this.height = height;
 	}
 	
 	
-	public Color color() {
+	public Color getColor() {
 		return color;
 	}
 
@@ -95,11 +95,11 @@ public class Sprite {
 	}
 	
 	public void resetToInitialPosition() {
-		setxPosition(initialXPosition);
-		setyPosition(initialYPosition);
+		setXPosition(initialXPosition);
+		setYPosition(initialYPosition);
 	}
 	
 	public Rectangle getRectangle() {
-		return new Rectangle(GetxPosition(), GetyPosition(), Getwidth(), Getheight());
+		return new Rectangle(getXPosition(), getYPosition(), getWidth(), getHeight());
 	}
 }
